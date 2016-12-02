@@ -1,0 +1,238 @@
+<% include partials/header %>
+
+		<div id="profile-image-container" class="header-image-container image-uploader">
+			<%console.log(populatedUser.header_position)%>
+			<img id="profile-image" style="top:<%=populatedUser.header_position%>;" class="profile-image image-to-change" src=<%=populatedUser.header_image%>></img>
+
+		</div>
+		
+		<div class="profile-header image-uploader">
+			
+			<div class="profile-image-circle">
+				<img class="user-image image-to-change" src=<%=populatedUser.profile_image%>></img>
+			</div>
+			
+			<div id="username">
+				<h4><%=populatedUser.username%></h4>
+			</div>
+		</div>
+	<div class="header-image-container user-show-menu-container error-height-adjust">
+		
+		<ul>
+			<li><a href="#">Videos</a></li>
+			<li><a href="#">Favorites</a></li>
+			<li><a href="#">History</a></li>
+			<li><a href="#">Subscribers</a></li>
+		</ul>
+	</div>
+	
+	<div class="user-profile-container">
+		
+	</div>
+	
+	<div class="user-profile-container container  general-container">
+
+		<div id="left-container-user">
+			<div class="content">
+				<p id="slogan"><strong>Motto: </strong><span><%=populatedUser.slogan%></span></p>
+				<p id="about"><strong>About me: </strong><span><%=populatedUser.about%></span></p>
+				<p id="location"><strong>Location: </strong><span><%=populatedUser.city%>, <%=populatedUser.state%></span></p>
+			</div>
+			<div class="profile-ad-img">
+				<a href="#"><img class="ad-small" src="/images/ad.jpg" alt="#"></img></a>
+			</div>
+			<div class="profile-ad-img">
+				<a href="#"><img class="ad-small" src="/images/ad.jpg" alt="#"></img></a>
+			</div>
+			<div class="profile-ad-img">
+				<a href="#"><img class="ad-small" src="/images/ad.jpg" alt="#"></img></a>
+			</div>
+		</div>
+		<div id="right-container-user">
+			<div class="tab-container">
+				<div class="header user-show-header">
+					<h2>My Favorites</h2>
+				</div>
+
+				<div id="video-container">
+					<div class="row extra-height">
+						<%populatedUser.favorite_videos.forEach(function(faveVideo){ %>
+							<div class="small-video col-xs-6 col-sm-6 col-md-4">
+								<div class="image">
+									<a href="/video/<%=faveVideo._id%>"><img src="<%=faveVideo.preview_image_link%>" alt="#"></img></a>
+								</div>
+								<div class="video-info info-small extra-height-child">
+									<% if(faveVideo.title.length > 25){ 
+										faveVideo.title = faveVideo.title.substring(0, 22) + "...";
+									} %>
+									<a href="/video/<%=faveVideo._id%>"><p id="video-title"><%=faveVideo.title%></p></a>
+									
+									<p id="video-duration"><%=faveVideo.duration%></p>
+									<p id="video-views"><span><%=faveVideo.views%></span> Views</p>
+									<a id="video-created-by-image-user" href="/user/<%=faveVideo.created_by.username%>"><img src="<%=faveVideo.created_by.profile_image%>"></a>
+									<a id="video-created-by-user-show" href="/user/<%=faveVideo.created_by.username%>"><%=faveVideo.created_by.username%></a>
+									
+								</div>
+							</div>
+						<% }); %>
+					</div>
+				</div>
+			</div>
+			
+			<div class="tab-container">
+				<div id="my-videos" class="header">
+					<h2>My Videos</h2>
+				</div>
+			
+				<div class="video-container">
+					<div class="row extra-height">
+						<% if(typeof populatedUser !== 'undefined'){ %>
+							<%for(var i = 0; i < populatedUser.uploaded_videos.length; i++) {
+								var uploadedVideo = populatedUser.uploaded_videos[i];
+								if (i == 0){ %>
+									
+									<div class="col-xs-12">
+										<div class="main-video">
+											<div id="big-video-image">
+												<a href="/video/<%=uploadedVideo._id%>">
+												<div class="top-div"></div>
+												<div class="bottom-div"></div>
+												<div class="right-div"></div>
+												<img src="<%=uploadedVideo.preview_image_link%>" alt="#"></img>
+												</a>
+											</div>
+											
+											<div class="video-info extra-height-child">
+												<%if(uploadedVideo.title.length > 35)
+														uploadedVideo.title = uploadedVideo.title.substring(0, 32) + "..."; %>
+										
+												<a id="main-video" href="/video/<%=uploadedVideo._id%>"><p id="video-title"><strong><%=uploadedVideo.title%></strong></p></a>
+												
+												<%if(uploadedVideo.description.length > 120)
+														uploadedVideo.description = uploadedVideo.description.substring(0, 117) + "..."; %>
+														
+												<p id="video-description"><strong>Description: </strong><span><%=uploadedVideo.description%></span></p>
+												<p id="video-likes" class="second"><strong>Likes: </strong><span><%=uploadedVideo.likes%></span></p>
+												<p id="video-views" class="second"><strong>Views: </strong><span><%=uploadedVideo.views%></span></span> </p>
+											</div>
+											<div style="clear:both"></div>
+										</div>
+									</div>
+									
+								<% } else { %>
+									<div class="small-video col-xs-6 col-sm-6 col-md-4">
+										<div class="image">
+											<a href="/video/<%=uploadedVideo._id%>"><img src="<%=uploadedVideo.preview_image_link%>" alt="#"></img></a>
+										</div>
+										<div class="video-info info-small extra-height-child">
+											<%if(uploadedVideo.title.length > 19)
+													uploadedVideo.title = uploadedVideo.title.substring(0, 16) + "..."; %>
+									
+											<p id="video-title"><strong><%=uploadedVideo.title%></strong></p>
+											<p id="video-views"><strong>Views: </strong><span><%=uploadedVideo.views%></span></span> </p>
+										</div>
+									</div>
+								
+							
+								<% } %>
+							<% } %>
+						<% } %>
+					</div>
+				</div>
+			</div>
+<!--
+
+			<div class="tab-container subscribers">
+				<div class="header" >
+					<h2>Subscribers</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+						<div class="channel-container">
+							<img src="/images/user-logo.jpg" alt="#"></img>
+							<p id="channel-name">User1234</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="channel-container">
+							<img src="/images/user-logo.jpg" alt="#"></img>
+							<p id="channel-name">User1234</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="channel-container">
+							<img src="/images/user-logo.jpg" alt="#"></img>
+							<p id="channel-name">User1234</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="channel-container">
+							<img src="/images/user-logo.jpg" alt="#"></img>
+							<p id="channel-name">User1234</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="channel-container">
+							<img src="/images/user-logo.jpg" alt="#"></img>
+							<p id="channel-name">User1234</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="channel-container">
+							<img src="/images/user-logo.jpg" alt="#"></img>
+							<p id="channel-name">User1234</p>
+						</div>
+					</div>
+
+					<div class="col-md-2">
+						<div class="channel-container">
+							<img src="/images/user-logo.jpg" alt="#"></img>
+							<p id="channel-name">User1234</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="channel-container">
+							<img src="/images/user-logo.jpg" alt="#"></img>
+							<p id="channel-name">User1234</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="channel-container">
+							<img src="/images/user-logo.jpg" alt="#"></img>
+							<p id="channel-name">User1234</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="channel-container">
+							<img src="/images/user-logo.jpg" alt="#"></img>
+							<p id="channel-name">User1234</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="channel-container">
+							<img src="/images/user-logo.jpg" alt="#"></img>
+							<p id="channel-name">User1234</p>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="channel-container">
+							<img src="/images/user-logo.jpg" alt="#"></img>
+							<p id="channel-name">User1234</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+-->
+		</div>
+
+
+
+		</div>
+	</div>
+	
+	<script src="/javascripts/videoFavorites.js"> </script>
+	<script src="/javascripts/extraHeightAdjust.js"> </script>
+	<script src="/javascripts/adjustHeightNotification.js"> </script>
+
+<% include partials/footer %>

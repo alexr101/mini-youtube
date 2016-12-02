@@ -1,0 +1,20 @@
+<% include partials/header %>
+ 
+    <div id="login-container" class="container general-container">
+        <div class="login-page">
+        	<form id="login" action="/auth/login" method="POST">
+        	    <div id="login-header">
+        	        <h3>Come on in!</h3>
+            	    <img src="/images/door.png" alt="#"></img>
+            	</div>
+        		<label for="username">Username</label>
+        		<input type="text" id="username" name="username" />
+        		<label id="second-child" for="password">Password</label>
+        		<input type="password" id="password" name="password" />
+        		<button type="submit" class="btn btn-primary">Login</button>
+        		<button type="button" id="cancel-btn" class="btn btn-danger">Cancel</button>
+        	</form>
+        </div>
+    </div>
+    
+<% include partials/footer %>

@@ -1,0 +1,168 @@
+<% include partials/header %>
+
+<%
+var views =  numberWithCommas(video.views);
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+%>
+	<div id="page">
+		
+  	<div class="container video-show-container">
+	  	<div id="leftbar-video-comments">
+		  	<section id="video">
+		  		<%
+		  		
+		  		if( device != "desktop" && device!= "tv") {
+					video.source = video.source.replace("v/", "embed/");
+				}
+				%>
+		  		<iframe width="560" height="315" src="<%=video.source%>" frameborder="0" allowfullscreen></iframe>
+		  	</section>
+		  	<section id="info">
+		  		<h3 id="title"><%= video.title %></h3>
+		  		<div id="info-logo-views">
+			  		<div class="channel-thumbnail">
+			  			<a href="/user/<%=video.created_by.username%>"><img id="logo" src="<%=video.created_by.profile_image%>" alt="#"></img></a>
+			  			<div id="channel-subscribe-container">
+			  				<a id="channel-uploader" href="/user/<%=video.created_by.username%>"><%= video.created_by.username%></a>
+			  				<button class="btn btn-primary">Subscribe</button>
+			  				<p id="subscribers"><%=video.created_by.subscribers.length%></p>
+			  			</div>
+			  		</div>
+			  		<div id="views-div">
+			  			<h4><span id="views"><%=views%></span> Views</h4>
+			  		</div>
+			  	</div>
+			  	<h4>Description</h4>
+			  	<div class="description-container description-closed">
+			  		<p><%=video.description%></p>
+			  	</div>
+			  	<hr class="line-break">
+			  	<div id="favorite-video">
+			  		<button id="fave-button" type="button" class="btn btn-info">FAVE VID!</button>
+			  	</div>
+			  	<button id="description-btn" type="button" class="btn btn-primary">Show</button>
+		  	</section>
+		  	
+		    <section id="comments">
+		    	<div class="user-comment-container">
+			    		<% if(currentUser){ %>
+				    		<div class="username-container">
+				    			<a class="username" href="/user/<%=currentUser.username%>"><%=currentUser.username%></a>
+				    		</div>	
+				    		<a href="/user/<%=currentUser.profile_image%>"><img id="current-user-img" src="<%=currentUser.profile_image%>"></img></a>
+					    	<form class="user-comment" action="/comment/new" method="POST">
+					    		<input class="comment-id" style="display:none" type="text" name="videoId" value="<%=video._id%>">
+						    	<textarea id="user-comment" rows="4" placeholder="What do you think?" name="text"></textarea>
+						    	<div id="replyButtons">
+							    	<button type="submit" class="btn btn-primary btn-submit">Submit</button>
+							    	<button type="button" class="btn btn-danger btn-cancel">Cancel</button>
+							    </div>
+							</form>
+			    		<% } else { %>
+			    		<div class="form-container">
+			    			<div class="login-form-trigger"><a>Login to comment</a></div>
+			    		</div>
+			    		<% } %>
+			    </div>
+			    
+			 	<div class="replyForm">
+					<form action="/comment/new" method="POST">
+						<!--<input class="comment-id" name="id"/>-->
+						<input id="comment-id" name="commentId" value="">
+						<textarea rows="3" placeholder="What do you want to tell em?" name="text"></textarea>
+						<button id="submitReply" type="submit" class="btn btn-primary btn-submit">Submit</button>
+						<button id="cancelReply" type="button" class="btn btn-danger btn-cancel">Cancel</button>
+					</form>
+				</div>
+			    
+			    <% if(video.comments.length > 0){ %>
+			    	<hr class="line-break">
+		    		<h3>Comments:</h3>
+		    	<% } %>
+			    <% video.comments.forEach(function(comment){ %>
+			    	
+		 			<div class="comment-container">
+	    				<a href="/user/<%=comment.user.username%>"><img class="user-img" src="<%=comment.user.profile_image%>"></img></a>
+						<div class="comment comment-content">
+							<p class="id"><%=comment._id%></p>
+			    			<a href="/user/<%=comment.user.username%>"><%=comment.user.username%></a>
+			    			<p class="text"><%=comment.text%></p>
+			    			<% if(!currentUser){ %>
+			    				<div class="login-form-trigger comment-trigger"><button class="btn btn-primary-outline btn-reply">Reply</button></div>
+			    			<% } else { %>
+			    				<button class="btn btn-primary-outline btn-reply">Reply</button>
+			    			<% } %>
+			    			<p class="like-count"><%=comment.likes%></p>
+			    			<button class="btn btn-primary-invisible btn-like"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+			    			<button class="btn btn-primary-invisible btn-dislike"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+		    			</div>
+
+		    			<% if(comment.replies){ %>
+			    			<% comment.replies.forEach(function(reply){ %>
+				    			<div class="replies">
+				    				<img class="user-img" src="<%=reply.comment.user.profile_image%>"></img>
+									<div class="comment comment-content">
+										<p class="id"><%=comment._id%></p>
+										<a href="#"><%=reply.comment.user.username%></a>
+						    			<p class="text"><%=reply.comment.text%></p>
+						    			<% console.log(reply.comment.user) %>
+									    <% if(!currentUser){ %>
+						    				<div class="login-form-trigger comment-trigger"><button class="btn btn-primary-outline btn-reply">Reply</button></div>
+						    			<% } else { %>
+						    				<button class="btn btn-primary-outline btn-reply">Reply</button>
+						    			<% } %>
+										<p class="like-count"><%=comment.likes%></p>
+						    			<button class="btn btn-primary-invisible btn-like"><span class="glyphicon glyphicon-thumbs-up"></span></button>
+						    			<button class="btn btn-primary-invisible btn-dislike"><span class="glyphicon glyphicon-thumbs-down"></span></button>
+					    			</div>
+					    		</div>
+					    	<% }); %>
+				    	<% } %>
+		    		</div>
+		 		<% }); %>
+	    	
+	    	<% if (video.comments.length == 0) { %>
+	    		<hr class="line-break">
+		    	<h3>whoa...no comments yet!</h3>
+		    <% } %>
+		    </section>
+		</div>
+
+		<div id="rightbar-ad-related-videos">
+
+			<section id="ad">
+				<img src="/images/ad-2.png" alt="#"></img>
+			</section>
+			
+			<section id="related-videos">
+				<h4>You might also enjoy these other videos:</h4>
+			
+				<% relatedVideos.forEach(function(relatedVideo){ %>
+					<div class="video-container">
+						<div class="show-video-image">
+							<a href="/video/<%=relatedVideo._id%>"><img src="<%=relatedVideo.preview_image_link%>" alt="#"></img></a>
+						</div>
+						<div class="video-info-show">
+							<% if(relatedVideo.title.length > 40){ 
+								relatedVideo.title = relatedVideo.title.substring(0, 37) + "...";
+							} %>
+							<a href="/video/<%=relatedVideo._id%>"><h4><%=relatedVideo.title%></h4></a>
+							<a href="/user/<%=relatedVideo.created_by.username%>"><%=relatedVideo.created_by.username%></a>
+							<p><%=relatedVideo.views%> views</p>
+						</div>
+					</div>
+				<% }) %>
+			</section>
+		</div>
+	</div>
+	
+	</div>
+
+	<script src="/javascripts/video.js"> </script>
+    <script src="/javascripts/comments.js"> </script>
+    <script src="/javascripts/commentScrollTop.js"> </script>
+
+<% include partials/footer %>

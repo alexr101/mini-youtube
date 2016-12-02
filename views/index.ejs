@@ -1,0 +1,60 @@
+<% include partials/header %>
+
+	<div id="home-ad">
+		<div class="ad-lg">
+			<script src='//cdn.html5maker.com/embed.js?id=d5d056aabb251df70dfc568a0a070fbbcc0327a10e57&responsive=1&width=1000&height=350&h5mTag=html5maker'></script>
+		</div>
+		<div class="ad-md">
+			<script src='https://cdn.html5maker.com/embed.js?id=0cd97b8d33104970f2ba069ac4832876eea5eb2f703a&width=300&height=250&h5mTag=html5maker'></script>
+		</div>
+	</div>
+
+
+	<div class="container general-container">
+		
+		<div class="category-row">
+			<div class="video-container">
+				<div class="row">
+					<%for(var key in allVideosByCategory){%>
+						
+						<% var videoCategory = allVideosByCategory[key]; %>
+						<% if(videoCategory.length > 0) { %>
+							<div class="category clearfix">
+								<h4 class="index-category-header"><%=key%></h4>
+								<div class="multiple-items">
+									<% videoCategory.forEach(function(video){ %>
+										<div>
+											<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+												
+												<div class="index-video-image">
+													<a href="/video/<%=video._id%>"><img class="video-img" src="<%=video.preview_image_link%>" alt="#"></img></a>
+												</div>
+												<div class="video-info info-index">
+													<% if(video.title.length > 23){ 
+														video.title = video.title.substring(0, 20) + "...";
+													} %>
+													
+													<a href="/video/<%=video._id%>"><p id="video-title"><%=video.title%></p></a>
+													
+													<p id="video-duration"><%=video.duration%></p>
+													<p id="video-views"><span><%=video.views%></span> Views</p>
+													<a id="video-created-by-image" href="/user/<%=video.created_by.username%>"><img src="<%=video.created_by.profile_image%>"></a>
+													<a id="video-created-by" href="/user/<%=video.created_by.username%>"><%=video.created_by.username%></a>
+													
+												</div>
+											</div>	
+										</div>
+									<% }); %>
+								</div>
+							</div>
+						<% } %>
+					<% }; %>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+	<script src="/javascripts/indexVideo.js"></script>
+	<script src="/javascripts/slickCarouselIndex.js"></script>
+		
+<% include partials/footer %>
