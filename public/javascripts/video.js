@@ -17,9 +17,9 @@ function toggleDescription(){
 	$(descriptionDiv).toggleClass("description-closed", 300, "swing");
 
     if($(descriptionDiv).hasClass("description-closed")){
-       $(descriptionBtn).html("Show"); 
-    } else {
         $(descriptionBtn).html("Hide"); 
+    } else {
+        $(descriptionBtn).html("Show"); 
     }
 }
 
