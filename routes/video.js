@@ -41,7 +41,7 @@ router.route('/new')
 		var youtubeImageLink = "http://img.youtube.com/vi/" + videoId + "/0.jpg";
 		
 		//API information for Youtube video lookup
-		var googleApiKey = process.end.GOOGLE_API_KEY;
+		var googleApiKey = process.env.GOOGLE_API_KEY;
 		var apiLink = "https://www.googleapis.com/youtube/v3/videos?id=" + videoId;
 			apiLink += "&key=" + googleApiKey;
 			apiLink += "&fields=items(snippet(title,description, tags),contentDetails(duration))&part=snippet,contentDetails";
