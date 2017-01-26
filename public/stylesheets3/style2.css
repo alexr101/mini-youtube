@@ -1,0 +1,1170 @@
+@media (min-width:200px) {
+    section#info div#views-div h4 {
+        margin-top: 2px
+    }
+    section#info div#views-div h4,
+    section#info div.channel-thumbnail div#channel-subscribe-container a {
+        font-size: 12px
+    }
+    section#info div.channel-thumbnail div#channel-subscribe-container button {
+        padding: 5px
+    }
+    div.video-container div.video-info-show h4 {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+}
+
+@media (min-width:400px) {
+    .video-show-container {
+        width: 400px
+    }
+    section#info div#views-div h4,
+    section#info div.channel-thumbnail div#channel-subscribe-container a {
+        font-size: initial
+    }
+    div.video-container div.video-info-show h4 {
+        margin-bottom: 10px
+    }
+}
+
+@media (min-width:500px) {
+    .video-show-container {
+        width: 480px
+    }
+    div.video-container div.video-info-show h4 {
+        margin-bottom: 20px
+    }
+}
+
+@media (min-width:650px) {
+    .video-show-container {
+        width: 992px
+    }
+}
+
+@media (min-width:768px) {
+    div.video-show-container {
+        width: 992px
+    }
+}
+
+@media (min-width:992px) {
+    div.video-show-container {
+        width: 992px
+    }
+}
+
+@media (min-width:1050px) {
+    div.video-show-container {
+        width: 1050px
+    }
+}
+
+@media (min-width:1100px) {
+    div.video-show-container {
+        width: 1100px
+    }
+}
+
+@media (min-width:50px) {
+    div#leftbar-video-comments iframe {
+        width: 100%;
+        height: 340px
+    }
+    #leftbar-video-comments {
+        width: 100%;
+        padding: 0;
+        display: inline-block
+    }
+    #rightbar-ad-related-videos {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        float: none;
+        top: 0
+    }
+    #rightbar-ad-related-videos section#ad {
+        text-align: center;
+        width: 100%;
+        background-color: #000;
+        padding: 20px 5%
+    }
+    #rightbar-ad-related-videos section#ad img {
+        width: 90%;
+        border: 1px solid #fff
+    }
+    section#comments div.comment-container {
+        width: 100%;
+        margin: 10px 0 0;
+        padding-bottom: 10px;
+        overflow: hidden
+    }
+    #rightbar-ad-related-videos div.video-container {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding-left: 5px;
+        background-color: #FFF;
+        border: 1px solid rgba(0, 0, 0, .2);
+        width: 100%;
+        height: 120px
+    }
+    section#related-videos>h4 {
+        padding: 10px 0 10px 10px;
+        background-color: #FFF;
+        border: 1px solid rgba(0, 0, 0, .2);
+        margin-bottom: 0;
+        width: auto
+    }
+}
+
+@media (min-width:650px) {
+    div#leftbar-video-comments iframe {
+        width: 100%;
+        height: 440px
+    }
+    #leftbar-video-comments {
+        width: 65%;
+        padding: 0;
+        display: inline-block
+    }
+    #rightbar-ad-related-videos {
+        float: right;
+        display: inline-block;
+        width: 35%;
+        right: 0;
+        padding-left: 1%
+    }
+    #rightbar-ad-related-videos section#ad {
+        text-align: center
+    }
+    section#comments div.comment-container {
+        margin: 10px 0 0;
+        padding-bottom: 10px;
+        overflow: hidden
+    }
+    #rightbar-ad-related-videos div.video-container {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        min-width: 250px;
+        padding-left: 5px;
+        background-color: #FFF;
+        border: 1px solid rgba(0, 0, 0, .2);
+        height: 120px
+    }
+    section#related-videos>h4 {
+        padding: 10px 0 10px 10px;
+        background-color: #FFF;
+        border: 1px solid rgba(0, 0, 0, .2);
+        margin-bottom: 0;
+        width: 100%
+    }
+}
+
+@media (min-width:50px) {
+    div#leftbar-video-comments iframe {
+        height: 250px;
+        width: 100%
+    }
+}
+
+@media (min-width:650px) {
+    div#leftbar-video-comments iframe {
+        height: 350px;
+        width: 100%
+    }
+}
+
+@media (min-width:950px) {
+    div#leftbar-video-comments iframe {
+        height: 400px;
+        width: 100%
+    }
+    div.account-box,
+    div.tab-container div.header {
+        border: 1px solid rgba(0, 0, 0, .2);
+        background-color: #FFF
+    }
+    div#account-container div#left-account,
+    div.middle-container {
+        display: inline-block
+    }
+    .bottom-container,
+    .container {
+        margin: 0 auto
+    }
+    div.account-left-tab,
+    div.account-middle-tab,
+    div.account-right-tab {
+        margin-top: 20px
+    }
+    .account-left-tab {
+        width: 20%;
+        float: left
+    }
+    div#account-side-menu {
+        background-color: #FFF;
+        margin: 0;
+        border: 1px solid rgba(0, 0, 0, .2)
+    }
+    div#account-side-menu h3 {
+        margin-top: 0;
+        padding-left: 15px;
+        padding-top: 10px
+    }
+    div#account-side-menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 5px 0;
+        font-size: 17px;
+        width: 100%
+    }
+    div#account-side-menu ul li:last-child {
+        margin-bottom: 0
+    }
+    div#account-side-menu ul li a {
+        color: #000;
+        display: block;
+        padding: 10px 0 10px 15px;
+        width: 100%;
+        text-align: left
+    }
+    div#account-side-menu ul li a:hover {
+        background-color: rgba(0, 0, 0, .5);
+        color: #FFF;
+        text-decoration: none
+    }
+    .account-left-tab img.ad-small {
+        width: 100%;
+        text-align: left;
+        padding-top: 20px
+    }
+    div.middle-container {
+        width: 60%;
+        padding: 0 20px
+    }
+    div.middle-container h2 {
+        display: inline-block;
+        margin: 0
+    }
+    div.tab-container {
+        margin-bottom: 25px
+    }
+    div.tab-container.account {
+        margin-bottom: 5px
+    }
+    div.tab-container div.header {
+        padding: 10px;
+        margin-top: 20px
+    }
+    div.tab-container div.header:nth-child(1) {
+        margin-top: 0
+    }
+    div.tab-container div.header.user-show-header {
+        margin-top: 20px
+    }
+    div.middle-container div.header h2 {
+        margin: 0
+    }
+    div#account-container {
+        position: relative
+    }
+    div.account-box {
+        width: 100%;
+        padding: 15px 40px;
+        margin: 10px 0
+    }
+    div.account-box div.input-switch {
+        display: block;
+        margin-bottom: 10px
+    }
+    div.account-box div.input-switch-container input,
+    div.account-box div.input-switch-container span {
+        margin-bottom: 0
+    }
+    div.input-switch-container input {
+        margin-left: 10px;
+        width: 250px
+    }
+    div.input-switch-container button.update-btn,
+    div.input-switch-container input.url-input {
+        display: none
+    }
+    div.middle-container div.tab-container div#account-container div.input-switch-container p {
+        display: inline-block;
+        margin: 5px 0!important
+    }
+    div.input-switch input,
+    div.input-switch select {
+        display: none
+    }
+    div.input-switch select {
+        width: 120px;
+        height: 28px;
+        border-radius: 0;
+        margin-left: 10px
+    }
+    div.account-box div.info-header {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center
+    }
+    div.account-box h4 {
+        display: inline-block;
+        margin: 0
+    }
+    div.account-box p:last-child {
+        margin-bottom: 0
+    }
+    div.account-box button {
+        margin: 0 0 0 auto
+    }
+    div.account-box span.dash {
+        vertical-align: top
+    }
+    div.account-box span.asterisks {
+        vertical-align: sub
+    }
+    div.index-video-image {
+        position: relative;
+        width: 100%;
+        padding-bottom: 80%;
+        overflow: hidden
+    }
+    div.video-container div.index-video-image img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 15%
+    }
+    div.video-container div.show-video-image {
+        width: 180px;
+        height: 100px;
+        overflow: hidden;
+        position: relative
+    }
+    div.video-container div.show-video-image img {
+        position: absolute;
+        width: 180px;
+        top: -17px
+    }
+    div.main-video,
+    div.small-video {
+        margin-top: 20px;
+        position: relative
+    }
+    div.small-video {
+        margin-bottom: 10px
+    }
+    div.small-video div.small-video-image {
+        width: 100%
+    }
+    div.small-video div.image {
+        position: relative;
+        width: 100%;
+        padding-bottom: 78%;
+        overflow: hidden;
+        height: 80%
+    }
+    div.small-video div.image img {
+        width: 100%;
+        position: absolute;
+        bottom: 16%
+    }
+    div.video-info {
+        position: absolute;
+        background-color: #FFF;
+        padding: 0 5px 3px
+    }
+    div.info-small {
+        top: 72%;
+        right: 15px;
+        left: 15px
+    }
+    div.info-index {
+        top: 72%;
+        width: -moz-calc(100% - 20px);
+        width: -o-calc(100% - 20px);
+        width: -webkit-calc(100% - 20px);
+        width: calc(100% - 20px)
+    }
+    div.video-info p#video-duration {
+        position: absolute;
+        width: auto;
+        color: #d3d3d3;
+        padding: 0 5px;
+        background-color: rgba(0, 0, 0, .7);
+        right: 0;
+        top: -22px
+    }
+    div.video-info a#video-created-by {
+        display: inline-block;
+        float: right;
+        margin-right: 45px
+    }
+    div.video-info a#video-created-by-image,
+    div.video-info a#video-created-by-image-user {
+        position: relative;
+        display: inline-block;
+        float: right
+    }
+    div.video-info div.button {
+        position: absolute;
+        top: 0;
+        right: 5px
+    }
+    div.button button.btn-remove-video {
+        margin-top: 10px;
+        padding: 0 7px
+    }
+    div.channel-container {
+        height: 100px;
+        background-color: #FFF;
+        border: 1px solid rgba(0, 0, 0, .2);
+        margin: 20px 0
+    }
+    div.about p:last-child,
+    div.channel-container div.image p,
+    div.info p:last-child {
+        margin-bottom: 0
+    }
+    div.channel-container>div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        height: inherit
+    }
+    div.channel-container div.image {
+        position: relative
+    }
+    div.channel-container div.image img {
+        width: 100%
+    }
+    div.channel-container div.about,
+    div.channel-container div.info {
+        width: 33%
+    }
+    div.channel-container div.button {
+        width: 14%
+    }
+    div.channel-container.my-video-container {
+        height: initial;
+        display: relative;
+        width: 100%
+    }
+    div.channel-container.my-video-container div.image {
+        display: block;
+        position: relative;
+        width: 40%;
+        height: 100%
+    }
+    div.channel-container.my-video-container div.image div.content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%
+    }
+    div.channel-container.my-video-container div.image img {
+        height: 100%
+    }
+    div.channel-container.my-video-container div.about {
+        display: inline-block;
+        padding-left: 15px;
+        width: 40%
+    }
+    div.channel-container.my-video-container div.about p.video-about {
+        height: 60px;
+        margin-bottom: 5px;
+        overflow: hidden
+    }
+    div.channel-container.my-video-container div.about p.info {
+        font-weight: 700;
+        margin-bottom: 0
+    }
+    div.channel-container.my-video-container div.about span {
+        font-weight: 400
+    }
+    div.channel-container.my-video-container div.button {
+        width: 20%
+    }
+    div.channel-container.my-video-container div.button button {
+        display: block;
+        margin: 10px auto
+    }
+    .account-right-tab {
+        width: 20%;
+        float: right;
+        position: relative
+    }
+    .account-right-tab div#account-ads img {
+        margin-top: 15px;
+        width: 100%
+    }
+    .account-right-tab div#account-ads img:first-child {
+        margin-top: 0
+    }
+}
+    
+@media(min-width:200px){
+    .account-left-tab img.ad-small,
+    div#account-side-menu ul {
+        display: none
+    }
+    .account-left-tab,
+    .account-right-tab,
+    div#account-ads {
+        position: relative;
+        width: 100%
+    }
+    .account-left-tab {
+        float: none;
+        padding-top: 0
+    }
+    div#account-side-menu h3 span {
+        display: initial;
+        float: right;
+        margin-right: 25px
+    }
+    div.middle-container {
+        width: 100%;
+        display: inline-block;
+        padding: 0
+    }
+    .account-right-tab {
+        float: none
+    }
+    div#account-ads {
+        margin: 0 auto
+    }
+    .account-right-tab div#account-ads img {
+        display: block;
+        margin-top: 15px;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto
+    }
+    div.video-info a#video-created-by-user-show {
+        display: none
+    }
+    div.video-info.show-info p {
+        font-size: 10px;
+        margin-bottom: 0
+    }
+    div.video-info.show-info p#video-title {
+        margin-top: 0
+    }
+    div.video-info.show-info a#video-created-by {
+        margin-right: 30px;
+        font-size: 12px;
+        margin-top: 3px
+    }
+    div.video-info p#video-views {
+        display: inline
+    }
+    div.video-info a#video-created-by-image img {
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        right: 1px;
+        top: -21px
+    }
+    div.video-info a#video-created-by-image-user img {
+        position: absolute;
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        right: 1px;
+        top: -10px
+    }
+    div.info-index p#video-title {
+        margin-top: 0
+    }
+}
+
+@media(min-width:400px) {
+    div.video-info p {
+        display: inline-block;
+        font-size: initial
+    }
+    div.video-info p#video-title {
+        margin-top: 7px;
+        font-weight: 700;
+        display: block
+    }
+    div.video-info p#video-views {
+        display: inline
+    }
+    div.video-info a#video-created-by {
+        margin-right: 45px;
+        font-size: initial;
+        margin-top: 0
+    }
+    div.video-info a#video-created-by-image-user img {
+        width: 35px;
+        height: 35px;
+        top: -21px
+    }
+    div.info-index p#video-title {
+        margin-top: 0
+    }
+}
+@media(min-width:576px) {
+    div.video-info a#video-created-by-user-show {
+        display: inline-block;
+        float: right;
+        margin-right: 45px
+    }
+}
+@media (min-width:768px) {
+    div.info-index p#video-title {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+    div.info-index a#video-created-by-image {
+        top: 7px
+    }
+}
+@media (min-width:992px) {
+    div#account-ads {
+        display: initial;
+        width: 100%
+    }
+    .account-right-tab div#account-ads img {
+        display: inline
+    }
+    .account-left-tab {
+        width: 20%;
+        float: left;
+        padding-top: 0
+    }
+    .account-left-tab img.ad-small {
+        display: initial;
+        text-align: left;
+        padding-top: 20px
+    }
+    div#account-side-menu h3 span {
+        display: none
+    }
+    div#account-side-menu ul {
+        display: inline-block!important
+    }
+    div.middle-container {
+        width: 60%;
+        display: inline-block;
+        padding: 0 20px
+    }
+    .account-right-tab {
+        margin: 0 auto;
+        width: 20%;
+        float: right;
+        position: relative
+    }
+    .account-right-tab div#account-ads img {
+        margin-top: 15px;
+        width: 100%
+    }
+    .account-right-tab div#account-ads img:first-child {
+        margin-top: 0
+    }
+}
+
+
+
+/*---------------------------------------------------------*/
+@media(min-width:400px) {
+    .general-container {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px
+    }
+    .general-container::after {
+        content: "";
+        display: table;
+        clear: both
+    }
+}
+
+/*---------------------------------------------------------*/
+@media(min-width:500px) {
+    .general-container {
+        width: 480px
+    }
+}
+@media (min-width:576px) {
+    .general-container {
+        width: 540px;
+        max-width: 100%
+    }
+}
+@media (min-width:768px) {
+    .general-container {
+        width: 720px;
+        max-width: 100%
+    }
+}
+@media (min-width:992px) {
+    .general-container {
+        width: 960px;
+        max-width: 100%
+    }
+}
+@media (min-width:1200px) {
+    .general-container {
+        width: 1140px;
+        max-width: 100%
+    }
+}
+
+
+
+
+
+/*---------------------------------------------------------*/
+@media(min-width:200px) {
+    div#logo {
+        width: 15%;
+        float: left;
+        margin-top: 0;
+        margin-right: 2%
+    }
+    div#logo h4 {
+        font-size: 12px
+    }
+    div#logo h3 {
+        margin: 0;
+        font-size: 20px
+    }
+    div#logo span#you {
+        display: none
+    }
+    div#logo h4#mini {
+        margin-bottom: 0
+    }
+    div#logl span#tube,
+    div#logo h4#mini {
+        display: block
+    }
+    div#logo span.logo-red {
+        color: red;
+        margin-left: 0
+    }
+    div#searchBar {
+        width: 60%;
+        margin-right: 2%
+    }
+    div#authentication {
+        display: inline-block;
+        height: 50px;
+        position: relative;
+        text-align: center;
+        width: 21%;
+        margin-top: 2px
+    }
+    div#authentication a.header-link,
+    div.header-trigger.login-form-trigger {
+        display: block;
+        clear: both;
+        float: right
+    }
+    div#authentication a#login {
+        margin: 0
+    }
+    div#logged-out-auth {
+        margin-top: 5px
+    }
+    div#authentication button#upload {
+        margin-top: 15px;
+        padding: 0 2px;
+        -webkit-appearance: none
+    }
+    div#logged-in-auth button span#upload-text {
+        display: none
+    }
+    div#logged-in-auth button span#upload-image {
+        display: initial
+    }
+    div#logged-in-auth button span#upload-image img {
+        height: 15px
+    }
+    div#channel-tab {
+        width: 34px;
+        margin-top: 10px
+    }
+    div#channel-tab img {
+        width: 34px;
+        height: 34px
+    }
+    div.login-page {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        height: 255px;
+        padding: 0;
+        z-index: 1;
+        margin: 0 auto
+    }
+    div.login-page form#login {
+        width: 100%;
+        height: 300px;
+        padding-top: 15px;
+        overflow: initial
+    }
+    div.login-page input {
+        width: 90%;
+        margin-bottom: 15px
+    }
+}
+@media(min-width:400px) {
+    div.login-page,
+    div.login-page form#login {
+        width: 320px
+    }
+    div.login-page input {
+        width: 250px
+    }
+}
+@media(min-width:768px) {
+    div#authentication,
+    div#searchBar {
+        position: relative;
+        display: inline-block
+    }
+    div#authentication,
+    div#logl span#tube,
+    div#logo h4#mini,
+    div#logo span#you,
+    div#searchBar {
+        display: inline-block
+    }
+    div#logo {
+        width: initial;
+        float: left;
+        margin-top: 14px;
+        margin-right: 15px
+    }
+    div#logo h4 {
+        font-size: 14px
+    }
+    div#logo h3 {
+        margin: 0;
+        font-size: 24px
+    }
+    div#logo span.logo-red {
+        margin-left: -6px
+    }
+    div#searchBar {
+        width: 55%;
+        margin-top: 14px
+    }
+    div#authentication {
+        height: 50px;
+        text-align: center;
+        float: right;
+        width: 130px;
+        margin-top: 2px;
+        overflow: visible
+    }
+    div#authentication a.header-link,
+    div.header-trigger.login-form-trigger {
+        display: inline-block;
+        margin-top: 14px;
+        float: right;
+        clear: none
+    }
+    div#authentication a#login {
+        margin: 0 7px 0 0
+    }
+    div#logged-in-auth,
+    div#logged-out-auth {
+        margin-top: 0
+    }
+    div#authentication button {
+        margin-top: 14px;
+        padding-right: 3px;
+        padding-left: 3px;
+        width: auto;
+        height: auto
+    }
+    div#authentication form button {
+        margin-top: 14px;
+        padding: 4px 6px;
+        width: auto;
+        height: auto
+    }
+    div#logged-in-auth button span#upload-text {
+        display: initial
+    }
+    div#logged-in-auth button span#upload-image {
+        display: none
+    }
+    div#channel-tab {
+        width: 44px;
+        margin-top: 3px
+    }
+    div#channel-tab img {
+        width: 44px;
+        height: 44px
+    }
+}
+@media(min-width:992px) {
+    div#logo {
+        float: left;
+        margin-top: 12px;
+        margin-right: 75px
+    }
+}
+
+
+
+
+/*---------------------------------------------------------*/
+@media (min-width:650px) {
+    div#home-ad div.ad-lg {
+        display: unset
+    }
+    div#home-ad div.ad-md {
+        display: none
+    }
+}
+
+
+
+/*---------------------------------------------------------*/
+@media (min-width:200px) {
+    div#left-container,
+    div#middle-container,
+    div#right-container {
+        padding: 10px 0;
+        width: 100%
+    }
+    div.general-container.form-cont {
+        padding: 0
+    }
+    div#form-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 0 15px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px
+    }
+    div#form-container div input:not(:first-child) {
+        margin-top: 20px
+    }
+    div#form-container div textarea {
+        margin-top: 8px
+    }
+}
+@media (min-width:768px) {
+    div#left-container,
+    div#middle-container,
+    div#right-container {
+        padding: 15px initial;
+        width: 33.33%
+    }
+    div#left-container {
+        padding-right: 15px
+    }
+    div#middle-container {
+        padding: 0 15px
+    }
+    div#right-container {
+        padding-left: 15px
+    }
+    div.general-container.form-cont {
+        padding: initial
+    }
+    div#form-container {
+        width: auto;
+        padding-bottom: 15px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px
+    }
+    div#form-container div input:not(:first-child) {
+        margin-top: 30px
+    }
+    div#form-container div textarea {
+        margin-top: 10px
+    }
+}
+
+
+/*---------------------------------------------------------*/
+@media(min-width:200px) {
+    video#new-video {
+        height: 100%;
+        z-index: -1;
+        padding-bottom: 0;
+        min-height: 320px
+    }
+    .new-video-form-container {
+        width: 100%
+    }
+}
+@media(min-width:400px) {
+    .new-video-form-container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        lefT: 0;
+        right: 0;
+        margin: auto;
+        height: 320px;
+        width: 370px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, .82);
+        border: 1px solid rgba(0, 0, 0, .2);
+        padding: 25px 20px;
+        z-index: 1
+    }
+}
+@media(min-width:903px) {
+    video#new-video {
+        width: 100%;
+        padding-bottom: 50%
+    }
+}
+
+@media(min-width:200px) {
+    div.user-profile-container div#left-container-user div.profile-ad-img {
+        display: none
+    }
+    div.user-profile-container div#left-container-user,
+    div.user-profile-container div#right-container-user {
+        width: 100%;
+        float: none
+    }
+    .user-profile-container {
+        margin: 0 auto;
+        width: 100%
+    }
+    div.header-image-container ul {
+        left: 0;
+        text-align: center;
+        padding: 5px 5px 0
+    }
+    div.header-image-container ul li {
+        text-decoration: none;
+        display: inline-block;
+        text-align: left;
+        margin: 0 8px
+    }
+    div.header-image-container ul li a {
+        font-size: 13 px
+    }
+    div.video-container div.main-video div.video-info p {
+        display: none
+    }
+    div.video-container div.main-video div.video-info p.second {
+        display: inline-block;
+        padding-right: 7px
+    }
+    div.video-container div.main-video div.video-info p#video-likes.second {
+        margin: 0;
+        display: none
+    }
+    div.video-container div.main-video div.video-info p#video-title {
+        display: initial;
+        font-size: 15px;
+        margin-bottom: 10px
+    }
+    div.video-container div.main-video div.video-info {
+        padding: 5.5% 10px
+    }
+    div.user-profile-container div#right-container-user div#my-videos.header {
+        margin-top: 20px
+    }
+}
+@media(min-width:360px) {
+    div.video-container div.main-video div.video-info p#video-likes.second {
+        display: inline-block
+    }
+}
+@media(min-width:380px) {
+    div.header-image-container ul li a {
+        font-size: 15px
+    }
+}
+@media(min-width:400px) {
+    div.header-image-container ul li {
+        margin: 0 10px
+    }
+}
+@media(min-width:600px) {
+    .user-profile-container {
+        margin: 0;
+        width: auto
+    }
+    div.header-image-container ul li a {
+        font-size: 18px
+    }
+    div.video-container div.main-video div.video-info p#video-title {
+        font-size: 24px;
+        margin-bottom: 10px
+    }
+    div.video-container div.main-video div.video-info {
+        padding: 5.8% 10px
+    }
+    div.user-profile-container div#right-container-user div#my-videos.header {
+        margin-top: initial
+    }
+}
+@media(max-width:600px) {
+    .col-xxs-12 {
+        width: 100%
+    }
+}
+@media(min-width:992px) {
+    div.video-container div.main-video div.video-info p {
+        display: block;
+        margin-bottom: 10px
+    }
+}
+@media(min-width:850px) {
+    div.user-profile-container div#left-container-user div.profile-ad-img {
+        display: block;
+        width: 100%;
+        margin: 10px 0
+    }
+    div.user-profile-container div#left-container-user {
+        width: 20%;
+        float: left
+    }
+    div.user-profile-container div#right-container-user {
+        width: 80%;
+        float: right;
+        padding-left: 10px
+    }
+    div.header-image-container ul {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: auto;
+        background-color: #000;
+        margin: 0;
+        text-decoration: none
+    }
+    div.video-container div.main-video div.video-info {
+        padding: 5.9% 10px
+    }
+}
+
+
+/*---------------------------------------------------------*/
+@media(min-width:992px) {
+    div.video-container div.main-video div.video-info {
+        position: absolute;
+        left: 70%;
+        width: 30%;
+        height: 50%;
+        color: #FFF;
+        border: 0;
+        background-color: transparent
+    }
+}

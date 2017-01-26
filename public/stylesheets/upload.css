@@ -1,0 +1,59 @@
+div#video-register-container{
+    position: relative;
+    min-height: 320px;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.new-video-form-container{
+    position: absolute;
+    top: 0; bottom: 0; lefT: 0; right: 0;
+    margin: auto;
+    height: 320px; width: 380px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .82);
+    border: 1px solid rgba(0,0,0,.2);
+    padding: 25px 20px;
+    z-index: 1;
+}
+
+.new-video-form-container h1{
+    margin-top: 0;   
+}
+
+div.new-video-form-container form label,
+div.new-video-form-container form input,
+div.new-video-form-container form select,
+div.new-video-form-container form button.btn-primary{
+    display: block;
+    margin: 0 auto;
+}
+
+div.new-video-form-container form input#source{
+    width: 100%;
+}
+
+div.new-video-form-container form label{
+    margin-top: 10px;
+    text-align: center;
+}
+
+div.new-video-form-container form button.btn-primary{
+    margin-top: 15px;   
+}
+
+@media(min-width: 200px){
+    video#new-video{
+        height: 100%;
+        z-index: -1;
+        padding-bottom: 0%;
+        min-height: 320px;
+    }
+}
+
+@media(min-width: 903px){
+    video#new-video{
+        width: 100%;
+        padding-bottom: 50%;
+    }
+}

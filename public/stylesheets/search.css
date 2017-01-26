@@ -1,0 +1,26 @@
+div.search-container{
+        padding: 0 30px;
+}
+
+div#search-left-tab,
+div#search-right-tab{
+    display: inline-block;
+}
+
+div#search-left-tab{
+    width: 80%;
+}
+
+div#search-right-tab{
+    width: 20%;
+    float:right;
+}
+
+div#search-right-tab img:not(:first-child){
+    margin-top: 15px;
+}
+
+div#search-right-tab img{
+    padding: 15px 0px 15px 15px;
+    width: 100%;
+}

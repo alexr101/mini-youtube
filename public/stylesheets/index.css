@@ -1,0 +1,47 @@
+div#home-ad{
+    display: relative;
+    overflow:scroll;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div#home-ad div.ad-md{
+    display: unset;
+}
+
+div#home-ad div.ad-lg{
+    display: none;  
+}
+
+div.category{
+    margin-top: 0px;
+}
+
+div.category h4.index-category-header{
+    margin: 0 7px 0 9px;
+    margin-top: 5px;
+    padding: 7px 0 7px 5px;
+    background: #f2f2f2;
+    
+    border: 1px solid rgba(0,0,0,.2);
+}
+
+/* Carousel Slides */
+
+div.slick-slide{
+    display: relative;
+}
+
+div.slick-slide > div{
+    padding: 0px 10px;
+    width: 100%;
+}
+
+@media (min-width: 650px){
+    div#home-ad div.ad-lg{
+        display: unset;  
+    }
+    div#home-ad div.ad-md{
+        display: none;
+    }
+}

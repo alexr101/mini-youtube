@@ -1,0 +1,451 @@
+
+/* General Classes */
+.container{
+	position:relative;
+}
+
+.bottom-info{
+	margin-top:20px;
+}
+
+.invisible{
+	display: none;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color:rgba(0,0,0,.1);
+}
+
+/* General Classes - Clearfix */
+.clearfix:after { content: "\00A0"; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+.clearfix{ display: inline-block;}
+html[xmlns] .clearfix { display: block;}
+* html .clearfix{ height: 1%;}
+.clearfix {display: block}
+
+/*Left bar*/
+#leftbar-video-comments{
+	padding-right:1%;
+	width:65%;
+	padding: 0;
+	display: inline-block;
+}
+
+/* Left bar - Video */
+section#video{
+	margin-bottom: 0px;
+	padding-bottom:0px;
+}
+div#leftbar-video-comments iframe{
+	width:100%;
+	height:440px;
+}
+
+/* Left bar - Info Section */
+/* Left bar - Info Section - Top Channel Info */
+
+section#info {
+	background-color: #FFF;
+	border: 1px solid rgba(0,0,0,.2);
+	padding: 10px 10px;
+	margin-bottom: 10px;
+}
+
+section#info h3 {
+	margin-top: 0;
+}
+
+section#info div#info-logo-views{
+	position: relative;
+}
+
+section#info div.channel-thumbnail div#channel-subscribe-container{
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+}
+
+section#info div.channel-thumbnail div#channel-subscribe-container a{
+	display: block;
+}
+
+section#info div.channel-thumbnail div#channel-subscribe-container p{
+	display: inline;
+}
+
+section#info div.channel-thumbnail img#logo{
+	width: 100px;
+}
+
+section#info div#views-div{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#info div.description-container{
+	overflow: hidden;
+	height: auto;
+}
+
+#info div.description-closed{
+	height: 40px;
+}
+
+
+
+/*Left bar - User Comment*/
+section#comments{
+	background-color: #FFF;
+	border: 1px solid rgba(0,0,0,.2);
+	padding: 10px 10px;
+}
+
+section#comments h3{
+	margin-top: 0;
+}
+
+section#comments div.user-comment-container{
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+	vertical-align: bottom;
+}
+
+p.id,
+input#comment-id,
+input.comment-id{
+	display: none;
+}
+
+div.user-comment-container form.user-comment,
+div.user-comment-container textarea#user-comment{
+	display: inline-block;
+	resize: none;
+	vertical-align: top;
+	width: 80%;
+	margin-left: 5px;
+}
+
+div.username-container > a.username{
+	display: block;
+	font-size: 18px;
+	margin-bottom: 5px;
+	margin-left: 64px;
+}
+
+div.user-comment-container img#current-user-img{
+	position: relative;
+	width: 50px;
+	margin-bottom: 20px;
+}
+
+div.user-comment-container div#replyButtons {
+	display: none;
+    margin: 10px 0 0px 0px;
+}
+
+div#replyButtons button {
+    margin-left: 5px;
+}
+
+
+/*Left bar - Public Comments*/
+section#comments div.comment-container{
+	margin: 10px 0 0 0;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+
+div.comment-container div.comment-content{
+	display: inline-block;
+	vertical-align: top;
+	width: 80%;
+	margin-left: 5px;
+} 
+
+div.comment-container div.comment-content button.btn{
+	height:30px;
+	padding-top: 4px;
+}
+
+div.comment-container div.comment-content div.login-form-trigger{
+	display: inline-block;
+}
+
+
+div.comment-container img.user-img{
+	position: relative;
+	width: 50px;
+	margin-bottom: 20px;
+}
+
+div.comment-container div.comment-content p.like-count{
+	display: inline;
+	padding-left: 5px;
+}
+
+/*Left bar - Public Comments - Replies*/
+section#comments div.comment-container div.replies{
+	margin: 20px 0 0 53px;
+}
+
+/* Reply form */
+section#comments div.replyForm {
+	margin: 15px 0;
+	display: none;
+}
+section#comments div.replyForm textarea {
+	display: block;
+	resize: none;
+	margin-bottom: 15px;
+	width:50%;
+}
+
+/*Right bar */
+#rightbar-ad-related-videos{
+	float: right;
+	display: inline-block;
+	width: 35%;
+	right: 0;
+	padding-left: 1%;
+}
+
+#rightbar-ad-related-videos section#ad{
+	text-align: center;
+}
+
+section#related-videos > h4{
+	padding: 10px 0px 10px 10px;
+	background-color: #FFF;
+	border: 1px solid rgba(0,0,0,.2);
+	margin-bottom: 0px;
+	width: 100%;
+}
+
+#rightbar-ad-related-videos div.video-container {
+	display: flex;
+	align-items: center;
+	margin: 0px 0;
+	min-width: 250px;
+	padding-left: 5px;
+	background-color: #FFF;
+	border: 1px solid rgba(0,0,0,.2);
+	height: 120px;
+}
+
+
+#rightbar-ad-related-videos div.video-container:hover {
+	background-color: #f2f2f2;
+	border: 1px solid rgba(0,0,0,.3);
+	cursor: pointer;
+}
+
+#rightbar-ad-related-videos div.video-container div.video-info-show {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width:55%;
+	padding: 0px 0 0px 10px;
+	
+}
+
+div.video-container div.video-info-show h4{
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+div.video-container div.video-info-show p{
+	margin-bottom: 0;
+}
+
+/* General CSS */
+.bottom-info{
+	margin-top:20px;
+}
+
+hr.line-break{
+	width: 100%;
+	margin: 0 0 10px 0;
+	border: none;
+	border-bottom: 2px solid rgba(0,0,0,.1);
+}
+
+@media (min-width: 400px) {
+	.video-show-container {
+	    width: 400px;
+	}
+}
+
+@media (min-width: 500px) {
+	.video-show-container {
+	    width: 480px;
+	}
+}
+
+@media (min-width: 650px) {
+	.video-show-container {
+	    width: 992px;
+	}
+}
+
+@media (min-width: 768px) {
+	div.video-show-container{
+	    width: 992px;
+	}
+}
+
+@media (min-width: 992px) {
+	div.video-show-container{
+	    width: 992px;
+	}
+}
+
+@media (min-width: 1050px){
+	div.video-show-container{
+		width: 1050px;
+	}
+}
+
+@media (min-width: 1100px){
+	div.video-show-container{
+	    width: 1100px;
+	}
+}
+
+@media (min-width: 50px){
+	div#leftbar-video-comments iframe{
+		width:100%;
+		height:340px;
+	}
+	
+	#leftbar-video-comments{
+		width:100%;
+		padding: 0;
+		display: inline-block;
+	}
+	
+	#rightbar-ad-related-videos{
+		position: relative;
+		width: 100%;
+		padding: 0;
+		float: none;
+		top: 0;
+	}
+	
+
+	
+	#rightbar-ad-related-videos section#ad{
+		text-align: center;
+		width: 100%;
+		background-color: #000;
+		border-right: 25px solid rgba(255,255,255,.9);
+		border-left: 25px solid rgba(255,255,255,.9);
+	}
+	
+	section#comments div.comment-container{
+		width: 100%;
+		margin: 10px 0 0 0;
+		padding-bottom: 10px;
+		overflow: hidden;
+	}
+	
+	#rightbar-ad-related-videos div.video-container {
+		display: flex;
+		align-items: center;
+		margin: 0px 0;
+		padding-left: 5px;
+		background-color: #FFF;
+		border: 1px solid rgba(0,0,0,.2);
+		width: 100%;
+		height: 120px;
+	}
+	
+	
+	section#related-videos > h4{
+		padding: 10px 0px 10px 10px;
+		background-color: #FFF;
+		border: 1px solid rgba(0,0,0,.2);
+		margin-bottom: 0px;
+		width: auto;
+	}
+	
+}
+
+@media (min-width: 650px){
+	div#leftbar-video-comments iframe{
+		width:100%;
+		height:440px;
+	}
+	
+	#leftbar-video-comments{
+		padding-right:1%;
+		width:65%;
+		padding: 0;
+		display: inline-block;
+	}
+	
+	#rightbar-ad-related-videos{
+		float: right;
+		display: inline-block;
+		width: 35%;
+		right: 0;
+		padding-left: 1%;
+	}
+	
+	#rightbar-ad-related-videos section#ad{
+		text-align: center;
+	}
+	
+	section#comments div.comment-container{
+		margin: 10px 0 0 0;
+		padding-bottom: 10px;
+		overflow: hidden;
+	}
+	
+	#rightbar-ad-related-videos div.video-container {
+		display: flex;
+		align-items: center;
+		margin: 0px 0;
+		min-width: 250px;
+		padding-left: 5px;
+		background-color: #FFF;
+		border: 1px solid rgba(0,0,0,.2);
+		height: 120px;
+	}
+	
+	section#related-videos > h4{
+		padding: 10px 0px 10px 10px;
+		background-color: #FFF;
+		border: 1px solid rgba(0,0,0,.2);
+		margin-bottom: 0px;
+		width: 100%;
+	}
+}
+	
+	
+@media (min-width: 50px){
+	div#leftbar-video-comments iframe{
+		height:250px;
+		width:100%;
+	}
+}
+
+@media (min-width: 650px){
+	div#leftbar-video-comments iframe{
+		height:350px;
+		width:100%;
+	}
+}
+
+@media (min-width: 950px){
+	div#leftbar-video-comments iframe{
+		height:400px;
+		width:100%;
+	}
+}

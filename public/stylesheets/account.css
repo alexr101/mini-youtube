@@ -1,0 +1,540 @@
+
+/* General Classes */
+.container{
+	position: relative;
+	margin: 0 auto;
+}
+
+.bottom-container{
+	margin: 0 15px;
+}
+
+.bottom-info{
+	margin-top:20px;
+}
+
+
+/* Content - All */
+div.account-left-tab,
+div.account-middle-tab,
+div.account-right-tab{
+	margin-top: 20px;
+}
+
+
+/* Content - Left Tab */
+.account-left-tab{
+	width: 20%;
+	float: left;
+}
+
+/* Content - Left Tab - Menu */
+div#account-side-menu {
+	background-color: #FFF;
+	margin: 0;
+	border: 1px solid rgba(0,0,0,.2);
+}
+
+div#account-side-menu h3 {
+	margin-top: 0;
+	padding-left: 15px;
+	padding-top: 10px;
+}
+
+div#account-side-menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 5px 0;
+	font-size: 17px;
+	width: 100%;
+}
+
+
+div#account-side-menu ul li{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	height: 35px;
+	width:100%;
+}
+
+div#account-side-menu ul li:last-child{
+	margin-bottom: 0px;
+}
+
+div#account-side-menu ul li a{
+	color: #000;
+	display: block;
+	padding: 10px 0 10px 15px;
+	width: 100%;
+	text-align: left;
+}
+
+div#account-side-menu ul li a:hover{
+	background-color:rgba(0,0,0,.5);
+	color: #FFF;
+	text-decoration: none;
+}
+
+/* Content - Left Tab - Ad */
+
+.account-left-tab img.ad-small{
+	width: 200px;
+	text-align: left;
+	padding-top: 20px;
+}
+
+/* Content - Middle Tab - General - Header */
+
+div.middle-container{
+	width: 60%;
+	display:inline-block;
+	padding: 0 20px;
+}
+
+div.middle-container h2{
+	display: inline-block;
+	margin: 0;
+}
+
+div.tab-container div.header{
+	background-color: #FFF;
+	border: 1px solid rgba(0,0,0,.2);
+	padding: 10px;
+	margin-top: 20px;
+}
+
+div.tab-container div.header:nth-child(1){
+	margin-top: 0;
+}
+
+div.tab-container div.header.user-show-header{
+	margin-top: 20px;
+}
+
+
+div.middle-container div.header h2{
+	margin: 0;
+}
+
+/* Content - Middle Tab - Account Info */
+
+div#account-container{
+	position: relative;
+}
+
+
+div#account-container div#left-account{
+	display: inline-block;
+}
+
+
+div.account-box{
+	width: 100%;
+	padding: 15px 40px 15px 40px;
+	margin: 10px 0;
+	background-color: #FFF;
+	border:  1px solid rgba(0,0,0,.2);
+}
+
+div.account-box div.input-switch{
+	display:block;
+	margin-bottom: 10px;
+}
+
+div.account-box div.input-switch-container input,
+div.account-box div.input-switch-container span{
+	margin-bottom:0;
+}
+
+div.input-switch-container input{
+	margin-left: 10px;
+	width: 250px;
+}
+
+div.input-switch-container input.url-input{
+	display: none;
+}
+
+div.input-switch-container button.update-btn{
+	display: none;
+}
+
+div.middle-container div.tab-container div#account-container div.input-switch-container p{
+	display: inline-block;
+	margin: 5px 0 !important;
+}
+
+div.input-switch input{
+	display: none;
+}
+
+div.account-box div.info-header{
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+}
+
+div.account-box h4{
+	display: inline-block;
+	margin: 0;
+}
+
+div.account-box p:last-child{
+	margin-bottom: 0;
+}
+
+div.account-box button{
+	margin: 0;
+	margin-left: auto;
+}
+
+div.account-box span.dash{
+	vertical-align: top;
+}
+
+div.account-box span.asterisks{
+	vertical-align: sub;
+}
+
+/* Content - Middle Tab - My history & favorited videos */
+
+div.index-video-image{
+	position: relative;
+    width: 100%;
+    padding-bottom: 80%;
+	overflow:hidden;
+}
+
+div.video-container div.index-video-image img{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom:15%;
+}
+
+div.video-container div.show-video-image{
+	width: 180px;
+	height: 100px;
+	overflow:hidden;
+	position: relative;
+}
+
+
+
+div.video-container div.show-video-image img{
+	position: absolute;
+	width: 180px;
+	top: -17px;
+}
+
+div.small-video,
+div.main-video{
+	margin-top: 20px;
+	position: relative;
+}
+
+div.small-video div.small-video-image{
+	width: 100%;	
+}
+
+div.small-video div.image{
+	position: relative;
+    width: 100%;
+    padding-bottom: 78%;
+	overflow:hidden;
+    height: 80%;
+}
+
+div.small-video div.image img{
+	width: 100%;
+	position: absolute;
+    bottom:16%;
+}
+
+
+
+div.video-info{
+	position: absolute;
+	background-color: #FFF;
+	padding: 0 5px;
+	border-left: 1px solid rgba(0,0,0,.2);
+	border-right: 1px solid rgba(0,0,0,.2);
+	border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+div.info-small{
+	top: 72%;
+	width: -moz-calc(100% - 30px);
+	width: -o-calc(100% - 30px);
+	width: -webkit-calc(100% - 30px);
+	width: calc(100% - 30px);
+}
+
+div.info-index{
+	top: 72%;
+	width: -moz-calc(100% - 20px);
+	width: -o-calc(100% - 20px);
+	width: -webkit-calc(100% - 20px);
+	width: calc(100% - 20px);
+}
+
+
+div.video-info p{
+	margin-bottom: 0;
+}
+
+div.video-info p#video-title{
+	margin-top: 7px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+div.video-info div.button{
+	position: absolute;
+	top: 0;
+	right: 5px;
+}
+
+div.button button.btn-remove-video{
+	margin-top: 10px;
+	padding:0px 7px;
+}
+
+/* Content - Middle Tab - Subcription channels */
+
+div.channel-container{
+	height: 100px;
+	background-color: #FFF;
+	border: 1px solid rgba(0,0,0,.2);
+	margin: 20px 0;
+}
+
+div.channel-container > div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: left;
+	height: inherit;
+}
+
+div.channel-container div.image{
+	position: relative;
+}
+
+div.channel-container div.image img{
+	width: 100%;
+}
+
+div.channel-container div.image p{
+	margin-bottom: 0;
+}
+
+div.channel-container div.about{
+	width: 33%;
+}
+
+div.about p:last-child,
+div.info p:last-child{
+	margin-bottom: 0;
+}
+
+div.channel-container div.info{
+	width: 33%;
+}
+
+div.channel-container div.button{
+	width: 14%;
+}
+
+/* Content - Middle Tab - My Published Videos */
+/* Uses same classes as subcriptions + extra class*/
+
+div.channel-container.my-video-container{
+	height: initial;
+	display: relative;
+	width: 100%;
+}
+
+div.channel-container.my-video-container div.image{
+	display: block;
+	position: relative;
+	width: 40%;
+	height: 100%;
+}
+
+div.channel-container.my-video-container div.image div.content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+}
+
+div.channel-container.my-video-container div.image img{
+	height: 100%;
+} 
+
+
+div.channel-container.my-video-container div.about{
+	display: inline-block;
+	padding-left: 15px;
+	width: 40%;	
+}
+
+div.channel-container.my-video-container div.about p.video-about{
+	height: 60px;
+	margin-bottom: 5px;
+	overflow: hidden;
+
+}
+
+div.channel-container.my-video-container div.about p.info{
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+
+div.channel-container.my-video-container div.about span{
+	font-weight: normal;
+}
+
+div.channel-container.my-video-container div.button{
+	width: 20%;
+}
+
+div.channel-container.my-video-container div.button button{
+	display: block;
+	margin: 10px auto;
+}
+
+
+
+/* Content - Right Tab */
+.account-right-tab{
+	width: 20%;
+	float: right;
+	position: relative;
+}
+
+.account-right-tab div#account-ads img{
+	margin-top: 15px;
+	width: 100%;
+}
+
+.account-right-tab div#account-ads img:first-child{
+	margin-top: 0;
+}
+
+@media (min-width: 200px){
+	.account-left-tab{
+		width: 100%;
+		float: none;
+		padding-top: 25px;
+	}
+	
+	.account-left-tab img.ad-small{
+		display: none;
+	}
+	
+	div#account-side-menu h3 span {
+		display: initial;
+		float: right;
+		margin-right: 25px;
+	}
+	
+	div#account-side-menu ul {
+		display: none;
+	}
+	
+	div.middle-container{
+		width: 100%;
+		display:inline-block;
+		padding: 0;
+	}
+	
+	.account-right-tab {
+		width: 100%;
+		float: none;
+		position: relative;
+	}
+	div#account-ads{
+		position: relative;
+		width: 100%;
+		margin: 0 auto;
+	}
+	
+	.account-right-tab div#account-ads img{
+		display: block;
+		margin-top: 15px;
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+@media (min-width: 600px){
+	
+	.account-right-tab {
+		margin: 0 auto;
+	}
+	
+	div#account-ads{
+		display: initial;
+		width: 100%;
+	}
+	.account-right-tab div#account-ads img{
+		display: inline;
+		margin-top: 15px;
+		width: 32.85%;
+	}
+	
+	.account-right-tab div#account-ads img:first-child{
+		margin-top: 15px;
+	}
+}
+
+@media (min-width: 850px){
+	.account-left-tab{
+		width: 20%;
+		float: left;
+		padding-top: 0;
+	}
+	
+	.account-left-tab img.ad-small{
+		display: initial;
+		width: 200px;
+		text-align: left;
+		padding-top: 20px;
+	}
+	
+	div#account-side-menu h3 span {
+		display: none;
+	}
+	
+	div#account-side-menu ul{
+		display: inline-block !important;
+	}
+	
+	div.middle-container{
+		width: 60%;
+		display:inline-block;
+		padding: 0 20px;
+	}
+	
+	.account-right-tab{
+		width: 20%;
+		float: right;
+		position: relative;
+	}
+	
+	.account-right-tab div#account-ads img{
+		margin-top: 15px;
+		width: 100%;
+	}
+	
+	.account-right-tab div#account-ads img:first-child{
+		margin-top: 0;
+	}
+	
+}
