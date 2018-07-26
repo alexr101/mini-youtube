@@ -21,7 +21,7 @@ var Video = require("./models/video.js");
 
 //Database Url, select from server config or local database
 var url = process.env.DATABASE || "mongodb://localhost:27017/youtube_app";
-mongoose.connect(url);
+mongoose.connect(url, { useMongoClient: true });
 
 var initPassport = require("./passport-init");
 

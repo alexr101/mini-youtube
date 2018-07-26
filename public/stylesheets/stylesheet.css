@@ -1,3 +1,38 @@
+/* BUTTONS */
+
+.btn-primary {
+    background-color: #c74646;
+    border-color: #c74646;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:visited {
+    background-color: #b54040;
+    border-color: #b54040;
+}
+
+.form-control {
+    height: 50px;
+}
+
+.white {
+    color: #FFF;
+}
+
+.grey {
+    color: #c5c5c5
+}
+
+.logo h3 {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+a {
+    color: #c74646;
+}
+
 /* NOT MINIFIED DUE TO C9 Not liking very long lines of code...!*/
 .container,
 section#info div#info-logo-views {
@@ -19,7 +54,7 @@ html {
 }
 
 body {
-    background-color: rgba(0, 0, 0, .1)
+    background-color:#4e4e4e;
 }
 
 #rightbar-ad-related-videos div.video-container,
@@ -307,10 +342,10 @@ div#searchBar>form {
     height: 55px;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
     background: #fff;
-    background: -moz-linear-gradient(top, #fff 0, #f7f7f7 100%);
-    background: -webkit-linear-gradient(top, #fff 0, #f7f7f7 100%);
-    background: linear-gradient(to bottom, #fff 0, #f7f7f7 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7', GradientType=0)
+    background: -moz-linear-gradient(top, #423e3e 0, #423e3e 100%);
+    background: -webkit-linear-gradient(top, #423e3e 0, #423e3e 100%);
+    background: linear-gradient(to bottom, #423e3e 0, #423e3e 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#423e3e', endColorstr='#423e3e', GradientType=0)
 }
 div#logo {
     float: left;
@@ -627,8 +662,8 @@ div#male-female div#male-input {
     background-color: #FFF;
     font-size: 40px;
     color: #000;
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 65px;
     margin: 0 10px 10px;
     border-radius: 5px;
     text-align: center
@@ -734,7 +769,7 @@ div.header-image-container {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 300px;
+    height: 400px;;
     min-width: 1050px;
     border-top: 10px solid #000;
     border-bottom: 10px solid #000;
@@ -785,6 +820,10 @@ div.profile-header {
 div.profile-header.user-show-profile-image {
     top: 165px
 }
+
+#profile-image-container {
+    margin-bottom: 25px;
+}
 div.profile-header div#username {
     position: absolute;
     width: 200px;
@@ -810,8 +849,8 @@ div.video-container div.main-video {
 }
 div.profile-image-circle {
     position: absolute;
-    width: 125px;
-    height: 125px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     overflow: hidden;
     top: -150px;
@@ -822,7 +861,7 @@ div.profile-image-circle {
     border: 5px solid #000
 }
 div.profile-header img.user-image {
-    width: 120px;
+    width: 165px;
     height: auto;
     min-height: 115px;
     margin: auto
@@ -1690,7 +1729,7 @@ footer {
     }
     div#logo h3 {
         margin: 0;
-        font-size: 20px
+        font-size: 32px
     }
     div#logo span#you {
         display: none
@@ -1703,7 +1742,7 @@ footer {
         display: block
     }
     div#logo span.logo-red {
-        color: red;
+        color: #c74646;;
         margin-left: 0
     }
     div#searchBar {
@@ -1798,17 +1837,17 @@ footer {
         width: initial;
         float: left;
         margin-top: 14px;
-        margin-right: 15px
+        margin-right: 15px;
     }
     div#logo h4 {
-        font-size: 14px
+        font-size: 14px;
     }
     div#logo h3 {
         margin: 0;
-        font-size: 24px
+        font-size: 32px;
     }
     div#logo span.logo-red {
-        margin-left: -6px
+        margin-left: -10px;
     }
     div#searchBar {
         width: 55%;
