@@ -20,7 +20,7 @@ var User = require("./models/user.js");
 var Video = require("./models/video.js");
 
 //Database Url, select from server config or local database
-var url = process.env.DATABASE || "mongodb://localhost:27017/youtube_app";
+var url = "mongodb://localhost:27017/youtube_app";
 mongoose.connect(url, { useMongoClient: true });
 
 var initPassport = require("./passport-init");
@@ -43,12 +43,14 @@ app.set('view engine', 'ejs');
 app.use(logger('dev'));
 //decode json and urlencoded
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 //Set up session
 app.use(session({
-  secret: "s93mSdsRwoj@9384js%$3p4ks"
+  secret: "s93mSdsRwoj@9384js%$3p4ks",
+  resave: true,
+  saveUninitialized: true
 }));
 //make flash messages from pasport available anywhere
 app.use(reqFlash());
