@@ -369,7 +369,7 @@ div#logo a:hover {
 div#searchBar {
     width: 55%;
     position: relative;
-    margin-top: 12px
+    margin-top: 8px;
 }
 div#searchBar form {
     display: flex;
@@ -379,12 +379,12 @@ div#searchBar form {
 }
 div#searchBar input {
     width: 100%;
-    height: 28px;
+    height: 36px;
     font-size: 16px;
     border: 2px solid rgba(0, 0, 0, .2);
     border-right: 0;
     -webkit-border-radius: 0;
-    -webkit-appearance: none
+    -webkit-appearance: none;
 }
 div#searchBar button {
     font-size: 15px;
@@ -396,8 +396,8 @@ div#searchBar button {
     border: 2px solid rgba(0, 0, 0, .2)
 }
 div#searchBar button img {
-    height: 15px;
-    margin: auto
+    height: 24px;
+    margin: auto;
 }
 div#authentication {
     height: 50px;
@@ -526,14 +526,29 @@ div#home-ad div.ad-md {
 div#home-ad div.ad-lg {
     display: none
 }
-div.category {
-    margin-top: 0
+div.category{
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
-div.category h4.index-category-header {
+
+.slick-prev, .slick-next {
+    width: 30px;
+    height: 30px;
+}
+
+
+div.category h4.index-category-header{
     margin: 5px 7px 0 9px;
-    padding: 7px 0 7px 5px;
-    background: #f2f2f2;
-    border: 1px solid rgba(0, 0, 0, .2)
+    padding: 11px 0 11px 15px;
+    background: #828282;
+    color: white;
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+}
+.slick-slider {
+    margin-top: 7px;
 }
 div.slick-slide {
     display: relative
@@ -1728,11 +1743,12 @@ footer {
         font-size: 12px
     }
     div#logo h3 {
-        margin: 0;
-        font-size: 32px
+        margin-top: 3px;
+        font-size: 20px;
+    
     }
     div#logo span#you {
-        display: none
+        /* display: none */
     }
     div#logo h4#mini {
         margin-bottom: 0
@@ -1851,7 +1867,7 @@ footer {
     }
     div#searchBar {
         width: 55%;
-        margin-top: 14px
+        margin-top: 9px;
     }
     div#authentication {
         height: 50px;
@@ -1859,44 +1875,44 @@ footer {
         float: right;
         width: 130px;
         margin-top: 2px;
-        overflow: visible
+        overflow: visible;
     }
     div#authentication a.header-link,
     div.header-trigger.login-form-trigger {
         display: inline-block;
         margin-top: 14px;
         float: right;
-        clear: none
+        clear: none;
     }
     div#authentication a#login {
-        margin: 0 7px 0 0
+        margin: 0 7px 0 0;
     }
     div#logged-in-auth,
     div#logged-out-auth {
-        margin-top: 0
+        margin-top: 0;
     }
     div#authentication button {
         margin-top: 14px;
         padding-right: 3px;
         padding-left: 3px;
         width: auto;
-        height: auto
+        height: auto;
     }
     div#authentication form button {
         margin-top: 14px;
         padding: 4px 6px;
         width: auto;
-        height: auto
+        height: auto;
     }
     div#logged-in-auth button span#upload-text {
-        display: initial
+        display: initial;
     }
     div#logged-in-auth button span#upload-image {
-        display: none
+        display: none;
     }
     div#channel-tab {
         width: 44px;
-        margin-top: 3px
+        margin-top: 3px;
     }
     div#channel-tab img {
         width: 44px;
@@ -1907,7 +1923,7 @@ footer {
     div#logo {
         float: left;
         margin-top: 12px;
-        margin-right: 75px
+        margin-right: 75px;
     }
 }
 
@@ -1917,10 +1933,10 @@ footer {
 /*---------------------------------------------------------*/
 @media (min-width:650px) {
     div#home-ad div.ad-lg {
-        display: unset
+        display: unset;
     }
     div#home-ad div.ad-md {
-        display: none
+        display: none;
     }
 }
 
