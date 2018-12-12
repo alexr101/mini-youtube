@@ -13,6 +13,8 @@ var gm = require("gm");
 var methodOverride = require("method-override");
 var device = require("express-device")
 var reqFlash = require("req-flash");
+require('dotenv').config()
+
 
 //Mongoose Models
 var Comment = require("./models/comment.js");
@@ -20,7 +22,7 @@ var User = require("./models/user.js");
 var Video = require("./models/video.js");
 
 //Database Url, select from server config or local database
-var url = "mongodb://localhost:27017/youtube_app";
+var url = process.env.DATABASE || "mongodb://localhost:27017/youtube_app";
 mongoose.connect(url, { useMongoClient: true });
 
 var initPassport = require("./passport-init");
