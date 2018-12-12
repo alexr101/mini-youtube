@@ -52,7 +52,7 @@ router.route('/new')
 			var json = JSON.parse(response.body);
 			//change the embed source otherwise video will not play in certain
 			//devices and browsers
-			var embedSource = sourceLink.replace("watch?v=", "v/");
+			var embedSource = sourceLink.replace("watch?v=", "embed/");
 			var title = json.items[0].snippet.title;
 			var description = json.items[0].snippet.description;
 			var tags = json.items[0].snippet.tags;
